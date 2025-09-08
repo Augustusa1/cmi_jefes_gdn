@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Qlik</title>
+    <!-- Incluir el CDN de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center p-8">
+
+    <!-- Contenedor principal para centrar el contenido y añadir estilo -->
+    <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-7xl h-full flex flex-col items-center justify-center dark:bg-gray-800 transition-colors duration-300">
+        
+        <!-- Título del tablero -->
+        <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center text-gray-900 dark:text-white">Tablero de Qlik</h1>
+        
+        <!-- Contenedor para el iframe, con altura responsive -->
+        <div class="w-full flex-grow rounded-lg overflow-hidden shadow-inner">
+            <iframe src="https://desa-qlik.avicolasofia.com/single/?appid=336cc391-b5de-4116-9a70-dcb04190c432&obj=WBSHs&theme=horizon&opt=ctxmenu,currsel"
+                    style="border:none;width:100%;height:100%;">
+            </iframe>
+        </div>
+        
+    </div>
+
+</body>
+</html>
